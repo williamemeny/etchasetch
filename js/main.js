@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var numOfRows;
 	var gridDivWidth;
 
-	numOfRows = 16;
+	numOfRows = 20;
 
 	gridDivWidth = 598  / numOfRows;
 
@@ -21,5 +21,8 @@ $(document).ready(function(){
 	$('.gridDiv').css('width', gridDivWidth + 'px');
 	$('.gridDiv').css('height', gridDivWidth + 'px');
 
+	$('.gridDiv').mouseenter(function(){
+		$(this).css('background-color', 'black');
+	});
 
 });

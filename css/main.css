@@ -14,3 +14,7 @@ div {
 .gridDiv  {
 	display: inline-block;
 	}
+
+.gridDiv:hover  {
+	background-color: black;
+	}
