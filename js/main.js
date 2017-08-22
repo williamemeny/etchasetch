@@ -1,15 +1,25 @@
 $(document).ready(function(){
 
-	console.log('Code is at least running!');
-
 	var numOfRows;
+	var gridDivWidth;
 
 	numOfRows = 16;
 
-	for (var i = numOfRows - 1; i >= 0; i--) {
-		$('#grid_container').append('<div> Div ' + i + '</div>');
-		console.log('Div created');
+	gridDivWidth = 598  / numOfRows;
+
+	for (var j = numOfRows - 1; j >= 0; j--) {
+	
+
+		for (var i = numOfRows - 1; i >= 0; i--) {
+			$('#grid_container').append('<div class = "gridDiv"></div>');
+			console.log('Div created');
+
+		}
+
 	}
+
+	$('.gridDiv').css('width', gridDivWidth + 'px');
+	$('.gridDiv').css('height', gridDivWidth + 'px');
 
 
 });
